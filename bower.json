@@ -1,0 +1,23 @@
+{
+  "name": "habr",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "normalize.css#^7.0.0",
+    "swiper": "^3.4.2",
+    "slideout.js": "https://github.com/mango/slideout.git#^1.0.1",
+    "preloader.css3": "^1.0.2",
+    "parallax-js": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

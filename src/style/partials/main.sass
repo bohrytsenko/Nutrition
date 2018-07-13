@@ -1,0 +1,232 @@
+// Colors
+
+$color_white: #fff
+$color_black: #262626
+$color_red: #ee4325
+$color_salat: #32c8c6
+$color_blue: #37b1e4
+$color_green_dark: #4ac05a
+$color_green_light: #8bc02f
+
+// Background
+
+.bg_salat
+  background-color: $color_salat
+  box-shadow: 0 10px 27px rgba(46, 170, 182, 0.73)
+
+.bg_blue
+  background-color: $color_blue
+  box-shadow: 0 10px 27px rgba(30, 141, 207, 0.73)
+
+.bg_green_dark
+  background-color: $color_green_dark
+  box-shadow: 0 10px 27px rgba(42, 154, 54, 0.73)
+
+.bg_green_light
+  background-color: $color_green_light
+  box-shadow: 0 10px 27px rgba(85, 140, 20, 0.73)
+
+body
+  background-color: #fff
+  font-family: 'Roboto', sans-serif
+  overflow: hidden
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+p,
+li a
+  margin: 0
+
+li
+  list-style: none
+
+img
+  max-width: 100%
+
+*
+  box-sizing: border-box
+
+section
+  height: 100vh
+
+.container
+  margin: 0 auto
+  width: 1140px
+  max-width: 100%
+
+.title,
+.undertitle
+  margin: 0
+
+.s_title
+  color: $color_black
+  font-size: 48px
+  font-weight: 700
+  position: relative
+  padding: 0 0 30px 0
+  display: flex
+  justify-content: center
+  margin: 0 0 50px 0
+  &:before
+    position: absolute
+    content: ''
+    bottom: 0
+    width: 167px
+    height: 8px
+    background-color: #86af14
+
+.btn_red
+  height: 45px
+  border-radius: 20px
+  background-color: $color_red
+  color: $color_white
+  border: 2px solid $color_red
+  font-size: 18px
+  font-weight: 700
+  position: relative
+  transition: 0.5s
+  &:hover
+    transition: 0.5s
+    background-color: $color_white
+    color: $color_red
+
+.btn_empty
+  height: 45px
+  border-radius: 20px
+  border: 2px solid $color_red
+  color: $color_red
+  font-size: 18px
+  font-weight: 700
+  transition: 0.5s
+  &:hover
+    transition: 0.5s
+    background-color: $color_white
+
+.pseudo
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 0
+  &__dish
+    position: absolute!important
+    top: -25%!important
+    left: -20%!important
+  &__tomato
+    position: absolute!important
+    right: 5px!important
+    left: inherit!important
+    top: 50% !important
+  &__leaf
+    position: absolute!important
+    left: 112px!important
+    top: 20px!important
+
+// Modal
+
+.modal_bl
+  display: flex
+  justify-content: center
+  width: 100%
+  position: absolute
+  top: 0
+  &__over
+    width: 100%
+    height: 100%
+    position: absolute
+    background-color: rgba(0, 0, 0, 0.75)
+    z-index: 2
+
+.modal
+  position: fixed
+  z-index: 3
+  padding: 30px 0 0 0
+  width: 558px
+  max-width: 100%
+  margin: 60px auto 0 auto
+  box-shadow: 0 17px 21px rgba(0, 0, 0, 0.17), inset 1px 1px 0 rgba(255, 255, 255, 0.7)
+  background-color: $color_white
+  &__close
+    position: absolute
+    right: 35px
+    top: 35px
+    cursor: pointer
+    z-index: 1
+    transition: 0.5s
+    &:hover
+      transition: 0.5s
+      transform: rotate(90deg)
+  &__title
+    padding-bottom: 20px
+    margin-bottom: 28px
+    position: relative
+    display: flex
+    justify-content: center
+    &:before
+      position: absolute
+      content: ''
+      bottom: 0
+      width: 167px
+      height: 8px
+      background-color: $color_green_light
+    .title
+      color: $color_black
+      font-size: 28px
+      font-weight: 700
+  &__text
+    margin-bottom: 20px
+    text-align: center
+    p
+      color: $color_black
+      font-size: 18px
+      font-weight: 400
+  &__icon
+    margin-bottom: 28px
+    text-align: center
+  &__info
+    padding: 30px 0 20px 0
+    background-color: #f4f4f4
+
+.modal_info
+  &__title
+    width: 363px
+    max-width: 100%
+    margin: 0 auto 20px auto
+    text-align: center
+    .title
+      color: $color_black
+      font-size: 24px
+      font-weight: 700
+      line-height: 24px
+  &__list
+    width: 340px
+    max-width: 100%
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.modal_list
+  div
+    width: 47%
+  &__name
+    color: $color_black
+    font-size: 18px
+    font-weight: 400
+    line-height: 36px
+  &__mail
+    a
+      color: #86af14
+      font-size: 18px
+      font-weight: 400
+      line-height: 36px
+      text-decoration: underline
+      transition: 0.5s
+  &__tel
+    a
+      color: $color_black
+      font-size: 18px
+      font-weight: 400
+      line-height: 36px
+      transition: 0.5s
